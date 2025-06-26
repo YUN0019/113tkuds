@@ -8,12 +8,10 @@ public class ds_03{
         String name = x.nextLine();
         System.out.println("輸入您的年齡：");
         int age = x.nextInt();
+         x.nextLine();
         System.out.println("您的城市：");
         String city = x.nextLine();
+        System.out.println("名字："+name+"年齡："+age+"城市："+city);
         
-        System.out.println("名子："+name + "年齡："+age + "城市："+city);
-        
-     
-
     }
 }
