@@ -6,8 +6,6 @@ public class searchNumber {
         int x = scanner.nextInt();
         boolean found = false;
 
-
-
         //線性搜
         for(int num : s){
             if (num == x ){
