@@ -1,25 +1,33 @@
 import java.util.Scanner;
+
 public class linear_search_trace {
     public static void main(String[] args) {
+        // 陣列可寫死
+        int[] s = {1, 3, 5, 7, 9};
+
+        // 使用 Scanner 讀取使用者輸入
         Scanner scanner = new Scanner(System.in);
-        int a = scanner.nextInt();
-        int []arr = {1,3,5,7,9};
-        int index = seq(arr, 7);
-        if(index == -1) {
-            System.out.println("沒有查找到");
+        System.out.print("請輸入要搜尋的數字：");
+        int target = scanner.nextInt();
+
+        boolean found = false;
+
+        // 線性搜尋並印出比對過程
+        for (int i = 0; i < s.length; i++) {
+            System.out.println("比對中：" + target + " vs " + s[i]);
+            if (s[i] == target) {
+                found = true;
+                break; // 找到即結束搜尋
+            }
+        }
+
+        // 結果輸出
+        if (found) {
+            System.out.println("結果：找到");
         } else {
-            System.out.println("找到, 索引為 = "+index);
+            System.out.println("結果：沒找到");
         }
-    }
 
-
-public static int seq(int[] arr, int value) {
-    //逐一比對，發現有相同值就返回索引
-    for(int i = 0; i < arr.length; i++){
-        if(arr[i] == value) {
-            return i;
-        }
-    }
-return -1;
+        scanner.close();
     }
 }
