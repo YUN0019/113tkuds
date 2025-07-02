@@ -36,3 +36,30 @@ public class q3binsearch {
 
  }
 
+ /*
+二元搜尋演算法
+
+  public static int binarySearch(int[] arr, int key) {
+        int left = 0;
+        int right = arr.length - 1;
+        int count = 0;  //用來計算次數
+
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            count++;
+
+            if (arr[mid] == key) {
+                System.out.println(count); // 👈 找到時也印出操作次數
+                return mid;
+            } else if (arr[mid] < key) {
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+        }
+
+        System.out.println(count); // 👈 找不到也要印
+        return -1;
+    }
+  */
+

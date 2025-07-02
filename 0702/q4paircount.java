@@ -6,7 +6,7 @@ public class q4paircount {
         Scanner target = new Scanner(System.in);
         int n = target.nextInt();
         
-        int []arr = new int[n];
+        int [] arr = new int[n];
         for(int i =0; i<n;i++){
             arr[i] = target.nextInt();
         }
@@ -25,3 +25,15 @@ public class q4paircount {
         System.out.println(ops);
     }
 }
+
+
+/*
+O(n^2) 演算法雙層迴圈
+
+for(int i = 0; i < n - 1; i++) {
+    for(int j = i + 1; j < n; j++) {
+        count++;
+        ops++;
+    }
+}
+ */
